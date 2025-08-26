@@ -283,7 +283,7 @@ h3 {
         margin-bottom: 200px;
         margin-left: 200px;
         margin-right: 50px;
-        border: black 3px solid;
+        border: black 2px solid;
         border-radius: 20px;
         box-shadow: 2px 2px 30px #fffefef8;
         cursor: pointer;
@@ -300,8 +300,29 @@ h3 {
         transition: 0.3s;
         text-align: center;
         object-fit: cover;
-        padding: 20px;
+        padding: 50px;
         border-radius: 30px 30px 30px 30px;
+        background: rgba(245, 245, 245, 0.651);
+        box-shadow: 1px 1px 30px #4e4d4cf8;
+        margin: 25px;
+
+        &:hover {
+            box-shadow: 4px 4px 40px #ec6e06f8;
+        }
+
+    }
+
+    @media screen and (max-width: 780px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+
+        img {
+            margin: auto;
+            margin-bottom: 20px;
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
@@ -328,28 +349,76 @@ h3 {
     padding: 50px;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media screen {
+        max-width: 100%;
+        padding: 20px;
+        margin: auto;
+    }
 }
 
 .boxform {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     max-width: 100%;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 50px;
+    border-radius: 20px;
     box-shadow: 1px 1px 30px #4e4d4cf8;
     height: auto;
     margin: 20px;
+
+    label{
+        font-family: 'Poppins', sans-serif;
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+    
+    input{
+        border: #000000f8 1px solid;
+        border-radius: 10px;
+        width: 300px;
+        padding: 10px;
+        
+    }
 
     input:hover {
         box-shadow: 1px 1px 5px #ec6e06f8;
         transform: scale(1.02);
         transition: 0.3s;
     }
+    
 
     &.mensaje textarea:hover {
         box-shadow: 1px 1px 5px #ec6e06f8;
         transform: scale(1.02);
         transition: 0.3s;
     }
+    @media screen and (max-width: 780px) {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+    }
+}
+
+.boxform .mensaje {
+    textarea {
+        border: #000000f8 1px solid;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        margin: auto;
+    }
+
+    textarea:hover {
+        box-shadow: 1px 1px 5px #ec6e06f8;
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+}
+
+.contacth2{
+    margin: 20px;
+    font-family: 'Russo One', sans-serif;
 }
