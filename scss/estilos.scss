@@ -1,4 +1,3 @@
-
 // Variables Sass
 $color-principal: #ec6e06f8;
 $color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
@@ -10,6 +9,7 @@ $color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
     box-shadow: $shadow;
     transition: box-shadow 0.2s;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ultra&family=UnifrakturMaguntia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&family=Ultra&family=UnifrakturMaguntia&display=swap');
 
@@ -18,6 +18,7 @@ $color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
     from {
         clip-path: inset(0 100% 0 0);
     }
+
     to {
         clip-path: inset(0 0 0 0);
     }
@@ -26,11 +27,13 @@ $color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
 [transition-style="in:wipe:right"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
 }
+
 // Animación Contacto
 @keyframes wipe-in-left {
     from {
         clip-path: inset(0 0 0 100%);
     }
+
     to {
         clip-path: inset(0 0 0 0);
     }
@@ -39,11 +42,13 @@ $color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
 [transition-style="in:wipe:left"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
 }
+
 // Animación Portfolio
 @keyframes wipe-in-bottom-left {
     from {
         clip-path: polygon(50% -50%, 150% 50%, 150% 50%, 50% -50%);
     }
+
     to {
         clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
     }
@@ -52,11 +57,13 @@ $color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
 [transition-style="in:wipe:bottom-left"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-bottom-left both;
 }
+
 // Animación Sobremi
 @keyframes wipe-in-top-right {
     from {
         clip-path: polygon(-50% 50%, 50% 150%, 50% 150%, -50% 50%);
     }
+
     to {
         clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
     }
@@ -65,11 +72,13 @@ $color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
 [transition-style="in:wipe:top-right"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-top-right both;
 }
+
 // Animación Index
 @keyframes wipe-in-top-left {
     from {
         clip-path: polygon(150% 50%, 150% 50%, 50% 150%, 50% 150%);
     }
+
     to {
         clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
     }
@@ -132,7 +141,7 @@ header {
     .videobg {
         position: absolute;
         width: 100%;
-        height: 100%;
+
         object-fit: cover;
         z-index: -1;
         overflow: hidden;
@@ -242,10 +251,10 @@ h3 {
     }
 
     @media (max-width: 992px) {
-    .navbar-collapse {
-        background: #6e6d6d9c !important;
+        .navbar-collapse {
+            background: #6e6d6d9c !important;
+        }
     }
-}
 
     &-brand {
         color: white;
