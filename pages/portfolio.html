@@ -11,60 +11,49 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
+<body transition-style="in:wipe:bottom-left">
     <header>
         <!-- Fondo del header -->
         <div class="videobg">
             <video autoplay muted loop src="../assets/img/videoheader.mp4" width="100%"></video>
         </div>
-        <!-- Barra de navegacion search -->
-        <nav class="navbar bg-danger-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand">KTM - MOTO TRAVEL</a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
-        </nav>
 
-        <!-- Titulo y logo  -->
-        <div class="contenedorheader">
-            <h1 class="titulo">MOTO TRAVEL</h1>
-            <section>
-                <img class="logo1" src="../assets/img/KTM_Logo_145.jpg" alt="LOGO1">
-
-            </section>
-        </div>
-
-        <!-- Barra de navegacion  -->
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
-                    <ul class="navbar-nav d-flex justify-content-around w-100">
-                        <li class="nav-item col">
-                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item col">
-                            <a class="nav-link" href="./sobreMi.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item col">
-                            <a class="nav-link" href="./portfolio.html">TIENDA</a>
-                        </li>
-                        <li class="nav-item col">
-                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item col">
-                            <a class="nav-link" href="./introduccion.html">ENVIOS</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <!-- Nav responsivo -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img src="../assets/img/KTM_Logo_145.jpg" alt="LOGO1" width="50" height="50" class="d-inline-block align-text-top me-2">
+                            Moto Travel KTM
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./sobreMi.html">NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./portfolio.html">TIENDA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./introduccion.html">ENVIOS</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
     </header>
     <main>
         <h2 class="text-center">Bienvenido a nuestra Tienda Oficial KTM</h2>
@@ -316,20 +305,46 @@
         </div>
     </main>
 
-    <footer>
-        <footer class="footerconter">
-            <div class="footer1">
-                <img src="../assets/img/KTM-removebg-preview.png" height="200" alt="Logo KTM" />
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <img src="../assets/img/KTM_Logo_145.jpg" alt="ktmlogo">
+                <p>Tu tienda de confianza en repuestos y accesorios KTM.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Enlaces útiles</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./introduccion.html">Envíos</a></li>
+                    <li><a href="./portfolio.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                </ul>
             </div>
 
 
-            <p class="footer3">
-                Copyright 2024 KTM Sportmotorcycle GmbH, all rights reserved
-            </p>
-            <div class="footer2">
-                <img src="../assets/img/1671c09a32f98796ede36fabfab4dee7-removebg-preview.png" height="200"
-                    alt="Logo WhatsApp" />
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p>📍 Av. Sarmiento 1340, Tucumán</p>
+                <p>📞 +54 11 5555-5555</p>
+                <p>✉ contacto@mototravel.com</p>
             </div>
+
+
+            <div class="footer-redes">
+                <h4>Seguinos</h4>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Proyecto MotoTravel- Gomez Miguel</p>
+        </div>
         </footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

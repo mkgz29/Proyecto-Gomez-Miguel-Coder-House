@@ -1,18 +1,85 @@
+// Variables Sass
+$color-principal: #ec6e06f8;
+$color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
 
+
+// Mixin para tarjetas No aplique mixin
+@mixin tarjeta-producto($radius, $shadow) {
+    border-radius: $radius;
+    box-shadow: $shadow;
+    transition: box-shadow 0.2s;
+}
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ultra&family=UnifrakturMaguntia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&family=Ultra&family=UnifrakturMaguntia&display=swap');
 
-
-// Variables Sass
-$color-principal: #ec6e06f8;
-$color-fondo-tarjeta: rgba(255,255,255,0.95);
-
-// Mixin para tarjetas
-@mixin tarjeta-producto($radius, $shadow) {
-  border-radius: $radius;
-  box-shadow: $shadow;
-  transition: box-shadow 0.2s;
+// Animación Introducccion
+@keyframes wipe-in-right {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
+
+[transition-style="in:wipe:right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+}
+// Animación Contacto
+@keyframes wipe-in-left {
+    from {
+        clip-path: inset(0 0 0 100%);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+[transition-style="in:wipe:left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
+// Animación Portfolio
+@keyframes wipe-in-bottom-left {
+    from {
+        clip-path: polygon(50% -50%, 150% 50%, 150% 50%, 50% -50%);
+    }
+    to {
+        clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+    }
+}
+
+[transition-style="in:wipe:bottom-left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-bottom-left both;
+}
+// Animación Sobremi
+@keyframes wipe-in-top-right {
+    from {
+        clip-path: polygon(-50% 50%, 50% 150%, 50% 150%, -50% 50%);
+    }
+    to {
+        clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+    }
+}
+
+[transition-style="in:wipe:top-right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-top-right both;
+}
+// Animación Index
+@keyframes wipe-in-top-left {
+    from {
+        clip-path: polygon(150% 50%, 150% 50%, 50% 150%, 50% 150%);
+    }
+    to {
+        clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+    }
+}
+
+[transition-style="in:wipe:top-left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-top-left both;
+}
+
+
+
 
 // Selectores globales
 * {
@@ -51,7 +118,7 @@ a {
 }
 
 span {
-    color: #ec6e06f8;
+    color: $color-principal;
 }
 
 // Anidamiento y organización por secciones
@@ -121,14 +188,14 @@ header {
 h2 {
     text-decoration: underline;
     text-align: center;
-    color: #0c0600f8;
+    color: $color-principal;
 }
 
 h3 {
     text-decoration: underline;
     text-align: center;
     font-size: x-large;
-    color: #f07509f8;
+    color: $color-principal;
 }
 
 .Subtitulo {
@@ -191,7 +258,7 @@ h3 {
             &:hover {
                 color: rgb(255, 255, 255);
                 transition: 0.3s;
-                text-shadow: 1px 5px 30px #ec6e06f8;
+                text-shadow: 1px 5px 30px $color-principal;
                 transform: scale(1.05);
                 transition: 0.3s;
             }
@@ -244,6 +311,7 @@ h3 {
     width: 90vh;
     height: 80vh;
     margin-top: 5%;
+    background-color: $color-fondo-tarjeta;
 
     @media (max-width: 768px) {
         grid-template-columns: 2fr 2fr;
@@ -271,7 +339,7 @@ h3 {
 }
 
 .btn-primary {
-    background-color: #ec6e06f8;
+    background-color: $color-principal;
     font-family: 'Russo One', sans-serif;
     font-style: initial;
     font-size: medium;
@@ -292,7 +360,7 @@ h3 {
 .cliente {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
-    
+
 
     img {
         max-width: 1000px;
@@ -444,6 +512,19 @@ h3 {
     font-family: 'Russo One', sans-serif;
 }
 
+.boxform .enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    &:hover {
+        box-shadow: inset 1px 1px 10px #fffffff8;
+        background-color: #d65a00f8;
+    }
+
+}
+
 /* Css Tienda */
 
 
@@ -478,7 +559,7 @@ h3 {
             align-items: center;
             justify-items: center;
             padding: 15px;
-            
+
 
             h3 {
                 font-size: large;
@@ -536,4 +617,162 @@ h3 {
     @extend .boton-carrito-base;
     font-weight: bold;
     box-shadow: 0 2px 8px #ec6e0688;
+}
+
+/* Seccion Envios */
+
+.envios {
+    padding: 2rem;
+    background: #f9fafb;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.envios h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.envios .cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 2rem 0;
+
+}
+
+.envios .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.envios .card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.envios .extra {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.mapenvios {
+    width: 100%;
+    box-shadow: 1px 1px 5px $color-principal
+}
+
+#envios {
+    background: $color-principal;
+    margin: 25% 25%;
+    border: $color-principal;
+    border-radius: 8px;
+
+    &:hover {
+        background: $color-principal;
+        box-shadow: 0 3px 10px rgb(243, 119, 3);
+
+    }
+}
+
+#envios2 {
+    background: $color-principal;
+    border: $color-principal;
+    border-radius: 8px;
+
+    &:hover {
+        background: $color-principal;
+        box-shadow: 0 3px 10px rgb(243, 119, 3);
+    }
+}
+
+/* Footer */
+
+.footer {
+    background: #1c1c1c;
+    color: #ddd;
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    text-shadow: 1px 1px 10px #ff6600;
+    color: #ff6600;
+}
+
+.footer-contacto p {
+    margin: 6px 0;
+    text-align: start
+}
+
+.footer-redes a img {
+    width: 28px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-redes a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.fab.fa-instagram {
+    color: #e4405f;
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.fab.fa-youtube {
+    color: #f12005;
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='orange' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
