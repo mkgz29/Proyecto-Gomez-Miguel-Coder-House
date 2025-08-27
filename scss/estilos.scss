@@ -422,3 +422,72 @@ h3 {
     margin: 20px;
     font-family: 'Russo One', sans-serif;
 }
+
+/* Css Tienda */
+
+.containtienda {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+
+
+
+    .imagentienda {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            box-shadow: inset 0 0 10px #2e2d2df8;
+
+        }
+
+        .uritotienda {
+            width: 100%;
+            height: auto;
+        }
+
+        .info-producto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            padding: 15px;
+
+            h3 {
+                font-size: large;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            button {
+                background-color: #ec6e06f8;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: 'Russo One', sans-serif;
+
+                &:hover {
+                    box-shadow: inset 1px 1px 10px #fffffff8;
+                    background-color: #d65a00f8;
+                }
+            }
+        }
+    }
+}
+
+.text-center{
+    margin: 20px;
+    text-align: center;
+    font-size: xxx-large;
+    font-family: "Russo One", sans-serif;
+    color: #ec6e06f8;
+}
