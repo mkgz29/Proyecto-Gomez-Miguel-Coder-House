@@ -1,3 +1,5 @@
+
+
 // Variables Sass
 $color-principal: #ec6e06f8;
 $color-fondo-tarjeta: rgba(255, 255, 255, 0.95);
@@ -263,7 +265,7 @@ h3 {
 
     @media (max-width: 992px) {
         .navbar-collapse {
-            background: #6e6d6d9c !important;
+            background: #0200009c !important;
             height: 35vh;
         }
     }
@@ -444,10 +446,17 @@ h3 {
 
 .sobremi {
     font-family: 'Russo One', sans-serif;
-    color: #0c0600f8;
-    text-align: start;
-    margin: 20px;
-    margin-left: 150px;
+    font-size: xx-large;
+    color:$color-principal;
+    text-align: center;
+    margin: 30px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+ 
+    @media screen {
+        font-size: xx-large;
+        text-align: center;
+    }
 }
 
 // Contacto
@@ -645,6 +654,26 @@ h3 {
     @extend .boton-carrito-base;
     font-weight: bold;
     box-shadow: 0 2px 8px #ec6e0688;
+}
+
+.precio{
+    font-weight: bolder;
+    color:#504f4e;
+    margin: 20px;
+
+}
+
+.precio.tachado{
+    text-decoration: line-through;
+    color: #e53935;
+    font-weight: bolder;
+}
+
+.precio.oferta{
+    font-weight: bold;
+    color:#0f8a03;
+    font-size: x-large;
+    margin-left: 10px;
 }
 
 /* Seccion Envios */

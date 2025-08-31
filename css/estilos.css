@@ -226,7 +226,7 @@ h3 {
 }
 @media (max-width: 992px) {
   .navbar .navbar-collapse {
-    background: rgba(110, 109, 109, 0.6117647059) !important;
+    background: rgba(2, 0, 0, 0.6117647059) !important;
     height: 35vh;
   }
 }
@@ -385,10 +385,18 @@ h3 {
 
 .sobremi {
   font-family: "Russo One", sans-serif;
-  color: rgba(12, 6, 0, 0.9725490196);
-  text-align: start;
-  margin: 20px;
-  margin-left: 150px;
+  font-size: xx-large;
+  color: rgba(236, 110, 6, 0.9725490196);
+  text-align: center;
+  margin: 30px;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+@media screen {
+  .sobremi {
+    font-size: xx-large;
+    text-align: center;
+  }
 }
 
 .contactform {
@@ -558,6 +566,25 @@ h3 {
 .boton-carrito-destacado {
   font-weight: bold;
   box-shadow: 0 2px 8px rgba(236, 110, 6, 0.5333333333);
+}
+
+.precio {
+  font-weight: bolder;
+  color: #504f4e;
+  margin: 20px;
+}
+
+.precio.tachado {
+  text-decoration: line-through;
+  color: #e53935;
+  font-weight: bolder;
+}
+
+.precio.oferta {
+  font-weight: bold;
+  color: #0f8a03;
+  font-size: x-large;
+  margin-left: 10px;
 }
 
 /* Seccion Envios */
