@@ -265,8 +265,22 @@ h3 {
 
     @media (max-width: 992px) {
         .navbar-collapse {
-            background: #0200009c !important;
+            background: #1c1c1c !important;
+            border-radius: 10px;
             height: 35vh;
+
+            
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav-link {
+            margin: auto;
+            padding: 5px;
+            font-size: x-small;
+        }
+        #searchForm {
+            height: 20px;
         }
     }
 
