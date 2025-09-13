@@ -18,7 +18,7 @@ Este proyecto es el trabajo final para el curso de Desarrollo Web en Coder House
 
 ## Enlaces importantes
 - **Repositorio GitHub:** [https://github.com/mkgz29/Proyecto-Gomez-Miguel-Coder-House](https://github.com/mkgz29/Proyecto-Gomez-Miguel-Coder-House)
-- **Sitio en Netlify:** [Pega aquí tu link de Netlify cuando esté publicado]
+- **Sitio en Netlify:** [(https://glittering-baklava-e99e20.netlify.app/)]
 - **Sitio en GitHub Pages:** [https://mkgz29.github.io/Proyecto-Gomez-Miguel-Coder-House/](https://mkgz29.github.io/Proyecto-Gomez-Miguel-Coder-House/)
 
 ## Sobre el proyecto
