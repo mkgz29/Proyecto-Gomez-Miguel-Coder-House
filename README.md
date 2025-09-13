@@ -1,39 +1,35 @@
-# 🏍️ Moto Travel - KTM
+# Proyecto MotoTravel KTM
 
-Este es un proyecto que realicé como parte de mis estudios en **Desarrollo Web Full Stack**.  
-La idea fue crear un sitio inspirado en la marca **KTM**, con un diseño atractivo y responsivo que muestre motos, una tienda y secciones informativas.  
+Este proyecto es el trabajo final para el curso de Desarrollo Web en Coder House. Consiste en un sitio web responsive para la tienda MotoTravel KTM, desarrollado con HTML5, SASS, CSS3 y Bootstrap.
 
-Mi objetivo principal con este trabajo fue practicar lo aprendido hasta ahora y darle una estructura lo más cercana posible a un proyecto real.  
+## Tecnologías utilizadas
+- HTML5
+- CSS3
+- SASS (variables, anidación, mixin, extend, &)
+- Bootstrap 5
+- Git & GitHub
+- Netlify (deploy)
 
----
+## Estructura del proyecto
+- 5 páginas HTML: index, sobreMi, portfolio, contacto, introduccion
+- Carpeta `css/` para estilos compilados
+- Carpeta `scss/` para SASS fuente
+- Carpeta `assets/img/` para imágenes optimizadas
 
-## 🔹 Lo que tiene el sitio
-- Una página de inicio con un header visual y menú de navegación.  
-- Secciones: Inicio, Nosotros, Tienda, Contacto y Envíos.  
-- Carrusel con imágenes de diferentes modelos de motos KTM.  
-- Estilos hechos con **CSS y SASS**, además de **Bootstrap 5** para el diseño responsivo.  
+## Enlaces importantes
+- **Repositorio GitHub:** [https://github.com/mkgz29/Proyecto-Gomez-Miguel-Coder-House](https://github.com/mkgz29/Proyecto-Gomez-Miguel-Coder-House)
+- **Sitio en Netlify:** [Pega aquí tu link de Netlify cuando esté publicado]
+- **Sitio en GitHub Pages:** [https://mkgz29.github.io/Proyecto-Gomez-Miguel-Coder-House/](https://mkgz29.github.io/Proyecto-Gomez-Miguel-Coder-House/)
 
----
+## Sobre el proyecto
+- Optimización SEO: títulos, meta descriptions, favicon, alt descriptivos, jerarquía de encabezados.
+- Responsive: diseño adaptable a dispositivos móviles.
+- SASS: uso de variables, anidación, mixin y extend.
+- Imágenes optimizadas (<1MB).
 
-## 🔹 Tecnologías que utilicé
-- **HTML5** para la estructura.  
-- **CSS3 / SASS** para los estilos.  
-- **Bootstrap 5** para maquetación y responsividad.  
-- **Git & GitHub** para control de versiones.  
-
----
-
-## 🔹 Próximos pasos
-Este proyecto todavía puede crecer bastante. Mis planes son:  
-- Agregar **JavaScript** para darle interactividad (validaciones, animaciones, carrito de compras, etc.).  
-- Conectar la tienda a un **backend con Node.js y Express**.  
-- Usar una **base de datos** para guardar productos y usuarios.  
-- Subirlo a un hosting (Netlify o Vercel) para tenerlo online.  
-
----
-
-## 👨‍💻 Sobre mí
-Soy estudiante de **Desarrollo Web Full Stack** y este proyecto forma parte de mi proceso de aprendizaje.  
-La idea es seguir mejorándolo a medida que avance en mi formación.  
+## Autor
+Miguel Gomez
 
 ---
+
+> Gracias a la profesora Verónica y a Coder House por la formación y el acompañamiento durante el curso.
